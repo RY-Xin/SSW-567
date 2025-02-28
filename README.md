@@ -9,48 +9,64 @@ I encountered some challenges with GitHub because I was unfamiliar with how to u
 I made sure my test cases covered all the required triangle types, including equilateral, isosceles, scalene, and right triangles. I also included test cases for invalid triangle configurations, such as negative or zero side lengths, to ensure the program could handle invalid inputs properly. All the test cases passed successfully, confirming that the program was thoroughly tested.
 https://github.com/RY-Xin/SSW-567.git
 
-GitHubAPI
+# GitHub API Assignment
+
 ## Project Description
+
 This project is a Python program that interacts with GitHub's REST API to retrieve a list of repositories for a specified user and the number of commits in each repository. The program demonstrates how to make HTTP requests, parse JSON responses, and handle API data effectively.
+
 ## Functionality
+
 - Takes a GitHub user ID as input.
 - Retrieves the list of repositories for the user.
 - Fetches the number of commits for each repository.
 - Outputs the repository names along with their commit counts.
+
 ## Code Structure
-- `github_api.py`: The main program file containing the function to interact with the GitHub API.
-- `test_github_api.py`: The unit test file to verify the functionality of the main program.
-## Usage
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/RY-Xin/SSW-567.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd SSW-567/GitHubApi567-hw4a
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install requests
-   ```
-4. Run the main program:
-   ```bash
-   python github_api.py
-   ```
-   Enter a GitHub user ID when prompted, and the program will output the repository names and their commit counts.
-5. Run the unit tests:
-   ```bash
-   python -m unittest test_github_api.py
-   ```
-   # GitHub API Assignment
 
-![Build Status](https://circleci.com/gh/RY-Xin/SSW-567/tree/main.svg?style=shield)
-
-## Features
-- Input GitHub user ID to get the number of commits for all repositories.
-- Implemented using GitHub API.
+- **github_api.py**: The main program file containing the function to interact with the GitHub API.
+- **test_github_api.py**: The unit test file to verify the functionality of the main program.
+- **requirements.txt**: Lists the dependencies required to run the program.
+- **.circleci/config.yml**: Configuration file for CircleCI to ensure continuous integration and testing.
 
 ## How to Run
-```bash
-python3 github_api.py
+
+1. Clone this repository to your local machine:
+    ```bash
+    git clone https://github.com/RY-Xin/SSW-567.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd SSW-567/GitHubAPI567-HW4a
+    ```
+
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Run the main program:
+    ```bash
+    python github_api.py
+    ```
+    Enter a GitHub user ID when prompted, and the program will output the repository names and their commit counts.
+
+5. Run the unit tests:
+    ```bash
+    pytest test_github_api.py
+    ```
+    This will run the test suite using pytest to verify the correctness of the code.
+
+## Build Status
+[![Build Status](https://circleci.com/gh/RY-Xin/SSW-567.svg?style=svg)](https://circleci.com/gh/RY-Xin/SSW-567)
+
+## Features
+
+- Input GitHub user ID to get the number of commits for all repositories.
+- Implemented using GitHub API to retrieve repository details and commit counts.
+
+## Notes
+
+- Ensure you have a GitHub account and the necessary access to the repositories you wish to retrieve data for.
 
