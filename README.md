@@ -59,7 +59,7 @@ This project is a Python program that interacts with GitHub's REST API to retrie
     This will run the test suite using pytest to verify the correctness of the code.
 
 ## Build Status
-![CircleCI](https://circleci.com/gh/RY-Xin/SSW-567/tree/HW04c_Mocking.svg)
+[![CircleCI Status](https://circleci.com/gh/RY-Xin/SSW-567/tree/HW04c_Mocking.svg?style=shield)](https://circleci.com/gh/RY-Xin/SSW-567/tree/HW04c_Mocking)
 
 ## Features
 
