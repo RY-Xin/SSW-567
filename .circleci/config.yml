@@ -7,13 +7,22 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Change to project directory
-          command: cd GitHubAPI567-HW4a
-      - run:
           name: Install dependencies
           command: pip install -r GitHubAPI567-HW4a/requirements.txt
       - run:
           name: Run tests
+          command: pytest GitHubAPI567-HW4a/test_github_api.py
+
+  test:
+    docker:
+      - image: python:3.12
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: pip install -r GitHubAPI567-HW4a/requirements.txt
+      - run:
+          name: Run unit tests
           command: pytest GitHubAPI567-HW4a/test_github_api.py
 
 workflows:
