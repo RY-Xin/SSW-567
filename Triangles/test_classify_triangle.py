@@ -22,5 +22,10 @@ class TestClassifyTriangle(unittest.TestCase):
         self.assertEqual(classify_triangle(1, 2, 3), "Invalid Triangle")
         self.assertEqual(classify_triangle(5, 1, 1), "Invalid Triangle")
 
+    def test_invalid_input(self):
+        self.assertEqual(classify_triangle(-1, 2, 3), "Invalid Triangle")
+        self.assertEqual(classify_triangle(0, 2, 3), "Invalid Triangle")
+        self.assertEqual(classify_triangle(1, 1, 3), "Invalid Triangle")
+
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(exit=False)
