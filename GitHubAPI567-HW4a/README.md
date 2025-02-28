@@ -32,7 +32,7 @@ This project is a Python program that interacts with GitHub's REST API to retrie
    ```
    # GitHub API Assignment
 
-![Build Status](https://circleci.com/gh/RY-Xin/SSW-567.svg?style=shield)
+![Build Status](https://circleci.com/gh/RY-Xin/SSW-567/tree/main.svg?style=shield)
 
 ## Features
 - Input GitHub user ID to get the number of commits for all repositories.
