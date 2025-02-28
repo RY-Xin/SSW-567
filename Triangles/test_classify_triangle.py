@@ -26,6 +26,18 @@ class TestClassifyTriangle(unittest.TestCase):
         self.assertEqual(classify_triangle(-1, 2, 3), "Invalid Triangle")
         self.assertEqual(classify_triangle(0, 2, 3), "Invalid Triangle")
         self.assertEqual(classify_triangle(1, 1, 3), "Invalid Triangle")
+        
+    def test_scalene_and_right_edge_case(self):
+        self.assertEqual(classify_triangle(6, 8, 10), "Scalene Triangle and Right")
+
+    def test_equilateral_large(self):
+        self.assertEqual(classify_triangle(99999, 99999, 99999), "Equilateral Triangle")
+
+    def test_negative_edges(self):
+        self.assertEqual(classify_triangle(-5, -5, -5), "Invalid Triangle")
+
+    def test_zero_edges(self):
+        self.assertEqual(classify_triangle(0, 5, 5), "Invalid Triangle")
 
 if __name__ == "__main__":
     unittest.main(exit=False)
