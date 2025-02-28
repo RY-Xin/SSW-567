@@ -30,4 +30,15 @@ This project is a Python program that interacts with GitHub's REST API to retrie
    ```bash
    python -m unittest test_github_api.py
    ```
-   ![Build Status](https://travis-ci.com/RY-Xin/SSW-567.svg?branch=main)
+   # GitHub API Assignment
+
+![Build Status](https://circleci.com/gh/RY-Xin/SSW-567.svg?style=shield)
+
+## Features
+- Input GitHub user ID to get the number of commits for all repositories.
+- Implemented using GitHub API.
+
+## How to Run
+```bash
+python3 github_api.py
+
