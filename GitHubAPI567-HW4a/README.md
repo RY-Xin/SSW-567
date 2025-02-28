@@ -30,4 +30,4 @@ This project is a Python program that interacts with GitHub's REST API to retrie
    ```bash
    python -m unittest test_github_api.py
    ```
-![Build Status](https://travis-ci.com/RY-Xin/SSW-567.svg?branch=main)
+   ![Build Status](https://travis-ci.com/RY-Xin/SSW-567.svg?branch=main)
