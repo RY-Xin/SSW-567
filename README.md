@@ -8,3 +8,4 @@ I encountered some challenges with GitHub because I was unfamiliar with how to u
 4. Describe the criteria you used to determine that you had sufficient test cases, i.e. how did you know you were done?
 I made sure my test cases covered all the required triangle types, including equilateral, isosceles, scalene, and right triangles. I also included test cases for invalid triangle configurations, such as negative or zero side lengths, to ensure the program could handle invalid inputs properly. All the test cases passed successfully, confirming that the program was thoroughly tested.
 https://github.com/RY-Xin/SSW-567.git
+![Build Status](https://travis-ci.com/your-username/your-repository.svg?branch=main)
